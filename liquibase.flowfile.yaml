@@ -1,0 +1,26 @@
+globalVariables:
+  GV_CHANGELOG: "Changelogs/DBATEST.xml"
+stages:
+  Status:
+    actions:
+    - type: liquibase
+      command: validate
+      cmdArgs: { changelog-file: "${GV_CHANGELOG}" }
+      # cmdArgs: { changelog-file: "Changelogs/DBATEST.xml"}
+
+    - type: liquibase
+      command: status
+      cmdArgs: { changelog-file: "${GV_CHANGELOG}" }
+      # cmdArgs: { changelog-file: "Changelogs/DBATEST.xml"}
+
+
+  # Update:
+  #   actions:
+  #   - type: liquibase
+  #     # if: "${LBCOMMAND} == update"
+  #     command: update
+
+# endStage:
+#   actions:
+#   - type: liquibase
+#     command: history

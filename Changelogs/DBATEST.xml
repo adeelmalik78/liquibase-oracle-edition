@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:pro="http://www.liquibase.org/xml/ns/pro"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog 	                
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd
+    	http://www.liquibase.org/xml/ns/pro 
+        http://www.liquibase.org/xml/ns/pro/liquibase-pro-latest.xsd ">
+
+<!-- <include file="DB_Changelogs/DBATEST/EMPWR17_FA_0_S1_R3_ORA_BLD/100_03_fa_corp_grants.sql"/>
+    <include file="DB_Changelogs/DBATEST/EMPWR17_FA_0_S1_R3_ORA_BLD/100_04_fa_sumry_inqry.sql"/> -->
+ 
+
+   <!-- <includeAll path="DB_Changelogs/DBATEST/EMPWR17_FA_0_S1_R3_ORA_BLD/"/>    -->
+
+
+    <includeAll path="main/schema1" contextFilter="schema1" />
+
+    <includeAll path="main/schema2" contextFilter="schema2" />
+
+    <includeAll path="main/schema3" contextFilter="schema3" />
+
+</databaseChangeLog>

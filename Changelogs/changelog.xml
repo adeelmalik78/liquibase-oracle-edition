@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:pro="http://www.liquibase.org/xml/ns/pro"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd
+    http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-latest.xsd ">
+
+
+    <!-- <includeAll path="main/100_ddl/"/>
+    <includeAll path="main/200_triggers/"/> -->
+
+    <changeSet author="amalik" id="v1.1" runWith="sqlplus" runAlways="true" labels="abc,123">
+        <sql>
+            select SYS_CONTEXT('USERENV', 'CURRENT_EDITION_NAME') AS current_edition FROM DUAL;        
+        </sql>
+    </changeSet>
+
+    <changeSet author="amalik" id="v2.1" runWith="sqlplus" runAlways="true" labels="dec,456">
+        <sql>
+            select SYS_CONTEXT('USERENV', 'CURRENT_EDITION_NAME') AS current_edition FROM DUAL;        
+        </sql>
+    </changeSet>
+
+    <!-- <include file="main/DB_Changelogs/DBATEST/EMPWR17_FA_0_S1_R3_ORA_BLD/100_01_fa_before_invalid_objs.sql" /> -->
+
+    <!-- <changeSet  author="liquibase-docs"  id="tagDatabase-example">
+        <tagDatabase  tag="version_1.3"/>
+    </changeSet>
+
+
+    </changeSet> -->
+
+
+</databaseChangeLog>
