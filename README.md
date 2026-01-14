@@ -130,7 +130,7 @@ ORA$BASE |
 4. **Error Handling**: If the edition doesn't exist, Oracle JDBC throws "edition does not exist" error.
 
 5. **Liquibase Pro Required**: The `--driver-properties-file` argument is available in Liquibase Pro. 
-    1. Properties file (defaults file): `driverPropertiesFile=oracle-edition-v1.properties`
+    1. Properties file (defaults file): `liquibase.command.driverPropertiesFile=oracle-edition-v1.properties`
     1. Environment variable: `LIQUIBASE_COMMAND_DRIVER_PROPERTIES_FILE=oracle-edition-v1.properties`
 
 ## Troubleshooting
